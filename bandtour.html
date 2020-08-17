@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-space=1"> 
+        <link rel="stylesheet" href="band.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <div class="navi">
+                <a href="#home">home</a>
+                <a href="#band">band</a>
+                <a href="#tour">tour</a>
+                <a href="#contact">contact</a>
+                <div class="navig">
+                    <button class="drop">more</button>
+                    <div class="content">
+                        <a href="merchandise">merchandise</a>
+                        <a href="extras">extras</a>
+                        <a href="medias">medias</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="ny.jpg" width="100%">
+            <div class="text">
+                <h2>New York</h2>
+                <h4>The atmosphere in New york is lorem ipsum.</h4>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="la.jpg" width="100%">
+            <div class="text">
+                <h2>Los Angles</h2>
+                <h4>We had the best time playing at Venice Beach!</h4>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="chicago.jpg" width="100%">
+            <div class="text">
+                <h2>Chicago</h2>
+                <h4>Thank you, Chicago - A night we won't forget.</h4>
+            </div>
+        </div>
+        <script>
+          var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("photo");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 4000);    
+        }
+        </script>
+        <div class="texto">
+            <p>THE BAND</p>
+            <h5><i>We love music</i></h5>
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="mem">
+            <div class="member">
+                <p>name</p>
+                <img src="bandmember.jpg">
+            </div>
+            <div class="member">
+                <p>name</p>
+                <img src="bandmember.jpg">
+            </div>
+            <div class="member">
+                <p>name</p>
+                <img src="bandmember.jpg">
+            </div>
+        </div>
+        <div class="table">
+            <p>TOUR  DATES</p>
+            <h5><i>Remember to book your tickets!</i></h5>
+            <table class="tableo">
+                <tr>
+                    <td>September<span>Sold out</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>October<span>Sold out</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>November<span class="ani">3</span>
+                    </td>
+                </tr>
+            </table>
+            <div class="manage">
+                <div class="gallery">
+                    <img src="newyork.jpg" alt="newyork">
+                    <div class="disc"><p><b>New York</b></p>
+                        <p>Fri 27 Nov 2016M</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="paris.jpg" alt="paris">
+                    <div class="disc">
+                        <p><b>Paris</b></p>
+                        <p>Sat 28 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p></div>
+                </div>
+                <div class="gallery">
+                    <img src="sanfran.jpg" alt="sanfran">
+                    <div class="disc"><p><b>San Francisco</b></p>
+                        <p>Sun 29 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <p>CONTACT</p>
+            <p><i>Fan?Drop a note!</i></p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>Chicago, US
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email"><br>
+            <i class="fas fa-phone"></i>Phone: +00 151515<br>
+            <i class="fas fa-envelope"></i>Email: mail@mail.com
+            <span>
+                <input type="text" placeholder="Message">
+            </span>
+        </div>
+        <div class="map">
+            <img src="map.jpg" alt="map">
+        </div>
+        <div class="ico">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-snapchat"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i><br>
+            <p>Powered by<a href="w3.css">w3.css</a></p>
+        </div>
+    </body>
+</html>
