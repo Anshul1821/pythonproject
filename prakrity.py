@@ -3,7 +3,6 @@ list1=[]
 for item in work1:
     items=item.strip()
     list1.append(items)
-print(list1)  
 work2=open("list2.txt","r")
 list2=[]
 for item in work2:
@@ -20,14 +19,6 @@ for item in work3:
 list_of_departments=["Content and Editorial","Creativity","Design and Video","Event Management and Publicity",
 "Technical","Social Media Management","Public Relations","Photography"]
 list=[]
-'''
-The link has 8 departments. Sample result of your code can be:
-
-EM + Tech = 8 people. Which means only 8 students have applied for both EM and Tech
-Em + tech + Design = 4 people. Which means only 4 people have applied for all these 3 departments.
-
-This is just an example, you gotta find all the combinations of 2 and 3. Please text me if you have any doubt.        
-'''
 
 for i in range(7):
     for j in range(i+1,8):
@@ -35,9 +26,12 @@ for i in range(7):
         list=[list_of_departments[i],list_of_departments[j]]
         print(list)
         for k in range(118):
-            a=[list1[k],list2[k]]
-            b=[list1[k],list3[k]] 
+            a=[list1[k],list2[k]] 
+            b=[list1[k],list3[k]]
             c=[list2[k],list3[k]]
-            if (a or b or c)==list:
+            d=[list3[k],list1[k]]
+            e=[list3[k],list2[k]]
+            f=[list2[k],list1[k]]
+            if a==list or b==list or c==list or d==list or e==list or f==list:
                 num=num+1
         print(num)               
